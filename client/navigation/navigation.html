@@ -1,0 +1,57 @@
+<template name="navigation">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">Campus<strong>Links</strong></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            {{#if currentUser}}
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                
+            
+            <ul class="nav navbar-nav navbar-right">
+                <li id="form-cust">
+                    <a href="/home" id="menu-nav"> <i class="fa fa-question-circle pad"></i>Question Forum</a>
+                </li>
+                <li id="form-cust">
+                    <a href="/messages" id="menu-nav"><i class="fa fa-inr pad"></i>Campus Trade</a>
+                </li>
+                <li id="form-cust">
+                    <a href="/sharedocs" id="menu-nav"><i class="fa fa-file-text pad"></i>ShareDocs</a>
+                </li>
+                <li id="form-cust">
+                    <a href="/profile" id="menu-nav"><i class="fa fa-user pad"></i>Profile</a>
+                </li>
+                    <li id="form-cust">
+                    <a href="/searchp" id="menu-nav"><i class="fa fa-search pad"></i>Search </a>
+                </li>
+                 <li> {{>signOut}}</li>
+              
+                </ul>
+                </div>  
+            {{else}}
+            <ul class="nav navbar-nav navbar-right">             
+                <li id="form-cust">
+                    <a href="/teacher" id="menu-nav">Teacher SignUp</a>
+                </li>
+                <li>
+                    <form action="/Access" class="SignUp">
+                        <button class="btn btn-default btn-primary" id="form-cust" type="submit" value="SignUp">Register</button>
+                    </form>
+                </li>
+                <li>
+                    <form action="/SignIn" id="ok form-cust">
+                        <button class="btn btn-default btn-primary" id="form-cust" type="submit" value="SignIn">Login</button>
+                    </form>
+                </li>
+            </ul>
+            {{/if}}
+        </div>
+    </nav>
+</template>

@@ -1,0 +1,20 @@
+<template name="signIn">
+    <div class="container custom-login">
+        <div class="row">
+            <div class="col-sm-12 text-center center-block form-center">
+                <div class="sign-in" id="signIn">
+                    <a class="show-forgot-password" href="/forgotPassword" id="showForgotPassword"><span class="glyphicon glyphicon-ok-circle pad" aria-hidden="true"></span>  Forgot Password</a>
+                    <form action="/messages" class="sign-in-form" id="signInForm" method="post">
+                        <br>
+                        <input class="email" id="signInEmail" type="email" name="email" placeholder="Email Address">
+                        <br>
+                        <input class="password" id="signInPassword" type="password" name="password" placeholder="Password">
+                        <br>
+                        <button class="btn btn-default  blank" type="submit" data-wipe="Login">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end .sign-in -->
+</template>

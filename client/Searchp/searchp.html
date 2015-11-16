@@ -1,0 +1,28 @@
+<template name="searchp">
+    <div class="container center-block text-center">
+        <div id="heading">
+            <h1 class="light white"><i class="fa fa-search pad"></i>Search Person</h1>
+        </div>
+        {{> searchBox }} {{> searchResult}}
+    </div>
+</template>
+<template name="searchBox"><br><br>
+    <input type="text" id="search-box" placeholder="Enter Name to Search..." />
+</template>
+<template name="searchResult">
+    <div id='search-result' class="container center-block text-center">
+        <div id="search-meta">
+            {{#if isLoading}} <img src="319.GIF" alt="">searching ... {{/if}}
+        </div>
+        {{#each getPackages}}
+        <div class="package">
+            <h4 class="name">
+        <a href="/profilea"><button type="submit"  id="person">{{{name}}}</button></a>
+      </h4>
+            <div class="description">
+                {{{branch}}}
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</template>

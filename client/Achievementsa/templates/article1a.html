@@ -1,0 +1,18 @@
+<template name="article1a">
+               <h5>{{proname}}</h5>
+                <img src="{{src}}" width="500" height="500">
+                <h4 class="muted">{{name}}</h4>
+                <p>{{description}}</p>
+                
+           {{#if currentUser}}
+                <p>
+                    <a href="#" class="like mlike">
+                       <!--  <img width="20px" src="likebtn.jpg" class="img-circle" alt="#" /> -->
+                       <span class="glyphicon glyphicon-thumbs-up pad" aria-hidden="true"></span>
+                       
+                    </a>
+                    <span class="label label-info">{{numlikes}}</span> &nbsp;
+                    <span class="badge badge-success">{{likethis}}</span>
+                </p>
+              {{/if}}
+</template>

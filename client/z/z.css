@@ -1,0 +1,563 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400);
+@import url(http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
+body,
+html {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
+}
+
+.home-page {
+    background-color: transparent;
+    height: 100%;
+    text-align: left;
+    margin: 14% 0;
+    font-weight: 300;
+    color: #fff;
+}
+
+.type {
+    font-size: 2em;
+    padding-left: 6px;
+}
+
+#title {
+    font-weight: 100 !important;
+    font-size: 6em !important;
+}
+
+.navbar-default {
+    background-color: transparent;
+    border: none;
+}
+
+.navbar-brand {
+    font-weight: 300;
+    color: #fff !important;
+    font-size: 2em;
+    padding: 40px 40px;
+}
+
+.form-center {
+    margin-top: 9%;
+}
+
+strong {
+    font-weight: 400;
+}
+
+.typed-cursor {
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+
+.navbar-right {
+    margin-right: 0px;
+    padding: 40px 40px;
+}
+
+#form-cust {
+    background-color: transparent;
+    font-size: 1.3em;
+    border: none;
+}
+
+#form-cust:focus,
+#form-cust:active,
+#form-cust:hover {
+    border: none;
+}
+
+input[type=text],
+input[type=password] {
+    font-size: 1em;
+}
+
+#code,
+#name,
+#signUpEmail,
+#signUpForm,
+#signUpPasswordConfirm,
+#signInPassword,
+#signInEmail,
+#forgotPasswordEmail {
+    font-size: 1.6em;
+    padding: 20px;
+    height: 60px;
+    color: #333 !important;
+}
+
+#showForgotPassword {
+    color: #fff;
+    text-decoration: none;
+    text-align: right !important;
+}
+
+#code,
+#signUpForm,
+#signUpEmail,
+#signUpPassword,
+#signUpPasswordConfirm,
+#signInPassword,
+#signInEmail,
+#forgotPasswordEmail {
+    margin-bottom: 20px;
+}
+
+.white {
+    color: #fff;
+}
+
+.light {
+    font-weight: 300 !important;
+}
+
+.v2 {}
+
+.v3 {
+    padding: 50px 50px;
+    background-color: rgba(10, 10, 10, 0.26);
+}
+
+.custom-login {
+    background-color: rgba(10, 10, 10, 0.26);
+    height: 500px;
+}
+
+[data-wipe] {
+    display: inline-block;
+    padding: 12px 18px;
+    text-decoration: none;
+    position: relative;
+    border: 2px solid #fff;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-align: left;
+    color: #3498db;
+    overflow: hidden;
+}
+
+[data-wipe]:before,
+[data-wipe]:after {
+    content: attr(data-wipe);
+    padding-top: inherit;
+    padding-bottom: inherit;
+    white-space: nowrap;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    color: #F1F1F2;
+    background: #3498db;
+}
+
+.blank {
+    border: 1px solid #fff;
+    margin: 20px 0;
+    background-color: transparent;
+    color: #fff;
+}
+
+th {
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: 300;
+    color: #3498db;
+    background: #eee;
+}
+
+.blank:hover {
+    background-color: transparent;
+}
+
+.blank-d {
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: #fff;
+}
+
+.blank-d:hover {
+    background-color: transparent;
+}
+
+.ask {
+    font-size: 2em;
+    color: #fff;
+    text-align: center !important;
+    font-weight: 300;
+}
+
+.media,
+.media-body {
+    color: #fff;
+    font-weight: 300;
+    font-size: 1.3em;
+    overflow: hidden;
+}
+
+.media {
+    color: #000;
+    font-weight: 300;
+}
+
+.well {
+    background-color: #ecf0f1;
+    color: #000;
+    font-weight: 400;
+}
+
+.jumbotron p {
+    font-weight: 400;
+}
+
+#showForgotPassword,
+#returnToSignIn {
+    font-size: 1.2em;
+    color: #fff;
+}
+
+#question {
+    font-size: 2em !important;
+}
+
+.questionforum {
+    background-color: rgba(10, 10, 10, 0.26);
+}
+
+.addfiles {
+    color: #fff;
+}
+
+.glyphicon-level-up {
+    color: #fff;
+}
+
+.uploadtitle {
+    color: #fff;
+    font-size: 2.5em;
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+#postList {
+    color: #000;
+    font-weight: 700;
+}
+
+thead,
+tr,
+td,
+table,
+.table-striped > tbody > tr:nth-of-type(odd) {
+    background: none;
+    color: #fff;
+    background-color: rgba(10, 10, 10, 0.26);
+    font-weight: 300;
+}
+
+tr {
+    font-size: 1.2em;
+}
+
+tr:hover,
+.table-hover > tbody > tr:hover {
+    background: none;
+    cursor: pointer;
+}
+
+tr:nth-child(odd) {
+    background: none;
+    background-color: rgba(10, 10, 10, 0.26);
+}
+
+#menu-nav {
+    color: #fff;
+    margin-top: -10px;
+}
+
+#menu-nav:hover {
+    color: #2ecc71;
+    text-decoration: none;
+}
+
+tr:nth-child(even),
+tr:nth-child(even):hover {
+    background: none;
+    background-color: rgba(10, 10, 10, 0.26);
+}
+
+#showForgotPassword:hover,
+#returnToSignIn:hover {
+    color: #e74c3c;
+    text-decoration: none;
+}
+
+.pad {
+    padding-right: 10px;
+}
+
+[data-wipe]:before {
+    left: 0;
+    text-indent: 18px;
+    width: 0;
+}
+
+[data-wipe]:after {
+    padding-left: inherit;
+    padding-right: inherit;
+    left: 100%;
+    text-indent: calc(-100% - 36px);
+    transition: 0.2s ease-in-out;
+}
+
+[data-wipe]:hover:before {
+    width: 100%;
+    transition: width 0.2s ease-in-out;
+    border-color: #fff;
+}
+
+[data-wipe]:hover:after {
+    left: 0;
+    text-indent: 0;
+    transition: 0s 0.2s ease-in-out;
+    border-color: #fff;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+/*======================================
+=            profile module            =
+======================================*/
+
+.profile-custom {
+    border-radius: 50% 50%;
+    background-color: #333;
+}
+
+.bg-colorp1 {
+    background: #2c3e50;
+    padding: 30px 0;
+}
+
+.bg-colorp2{
+    background:#e74c3c;
+    padding: 30px 0;
+}
+
+.blank2{
+    background: transparent;
+    background-color: transparent;
+    color: none;
+    border: none;
+}
+.bg-colorp3 {
+    background: #16a085;
+    padding: 30px 0;
+}
+
+.bg-colorp4 {
+    background: #4F5DB1;
+    padding: 30px 0;
+}
+
+.profile-custom:hover {
+    opacity: 0.7;
+}
+
+.pad-left {
+    padding-left: 30px;
+}
+
+.picons {
+    font-size: 20em;
+    color: #fff;
+    text-align: center;
+}
+/*-----  End of profile module  ------*/
+/*===================================
+=            marketplace            =
+===================================*/
+
+.market-image {}
+
+.modal {
+    color: #fff;
+    background: #333;
+}
+
+.big-box {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    color: black;
+}
+
+.big-box h2 {
+    text-align: center;
+    margin-top: 20%;
+    padding: 20px;
+    width: 100%;
+    font-size: 1.8em;
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 46.5em) {
+    .big-box h2 {
+        font-size: 16px;
+        padding-left: 0px;
+    }
+}
+
+@media screen and (max-width: 20.5em) {
+    .big-box h2 {
+        font-size: 12px;
+        padding-left: 0px;
+        margin-top: 30%;
+    }
+}
+
+.modal-dialog {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.modal-content {
+    height: 100%;
+    border-radius: 0;
+    background: #333;
+    overflow: auto;
+}
+
+.modal-title {
+    font-size: 3em;
+    font-weight: 300;
+    margin: 0 0 20px 0;
+}
+
+.close {
+    color: black;
+    opacity: 1.0;
+}
+
+.modal-dialog {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.modal-content {
+    height: 100%;
+    border-radius: 0;
+    overflow: auto;
+}
+
+.modal-body label {
+    font-size: 3em;
+    font-weight: 300 !important;
+}
+
+.modal-body input,
+#mname,
+.description {
+    scroll: auto;
+    color: #333;
+    margin-left: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 80px;
+    width: 600px;
+    font-weight: 300;
+    padding-left: 30px;
+    font-size: 2.3em;
+    padding-top: 0;
+}
+
+.mlike {
+    color: #fff;
+    font-size: 1.5em;
+}
+
+.mlike:hover {
+    text-decoration: none;
+    color: cyan;
+}
+
+.market-image {
+    text-align: center;
+    color: #fff;
+}
+
+.market-image h4 {
+    font-size: 2em;
+    font-weight: 300;
+}
+
+.market-image p {
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
+.market-image:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+/*-----  End of marketplace  ------*/
+.search-stuff2 {
+    background-color: #333;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    text-align: center;
+    margin: 0 auto;
+}
+.search-stuff input{
+    color: #333;
+}

@@ -1,0 +1,15 @@
+<template name="layout">
+	{{>navigation}}
+	<div class="container">
+		<div class="row">
+			{{#if currentUser}}
+			<div class="">
+				{{>sidebar}}
+			</div>
+			{{/if}}
+			<div class="col-sm-10">
+				{{>yield}}	
+			</div>
+		</div>
+	</div>
+</template>

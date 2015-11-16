@@ -1,0 +1,28 @@
+<template name="download1">
+    <table class="table table-hover table-striped table-bordered">
+        <thead>
+            <th>Name</th>
+            <th>Downloads</th>
+            {{#if isInRole 'admin'}}
+            <th> Delete File </th>
+            {{/if}}
+        </thead>
+        <tbody>
+            {{#each uploads}}
+            <tr>
+                <td style="padding-top:14px;font-size:20px;text-align:center;">{{name}}</td>
+                <td>
+                    <a href="{{url download=true}}" class="btn btn-success btn-lg text-center center-block"><span class="glyphicon glyphicon-floppy-save pad" aria-hidden="true"></span>Download</a>
+                </td>
+                <td>
+                    {{#if isInRole 'admin'}}
+                    <button class="btn btn-danger btn-lg adel text-center center-block " style="width:100%;"><span class="glyphicon glyphicon-ok-circle pad" aria-hidden="true"></span> Delete</button>
+                    <!-- 
+                <input type="button" name="" value="Delete" class="adel"> -->
+                    {{/if}}
+                </td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</template>

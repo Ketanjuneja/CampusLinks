@@ -1,0 +1,16 @@
+<template name="home">
+    <div class="container jumbotron questionforum">
+        <div class="row">
+            <div class="col-sm-12">
+                {{nav1}}
+                    <label for="posttext" class="ask text-center">Ask A Question</label>
+                    <div class="text-center">
+                    <input placeholder="Whats bothering you ?" class="input-xxlarge posttext" type="text" name="posttext" value="" id="posttext question" style="font-size:2em;width:100%;height:100px;padding:0 10px;margin:20px 0;">
+                    </div>
+                <ul id="postList" style="font-size:1em;">
+                    {{#each posts}} {{>post}} {{/each}}
+                </ul>
+            </div>
+        </div>
+    </div>
+</template>

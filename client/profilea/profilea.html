@@ -1,0 +1,67 @@
+<template name="profilea">
+    <div class="container white light">
+        <div class="row">
+            <div class="col-sm-3">
+                <!--  {{#if proimages}} -->
+                <a href="{{url}}" target="_blank">
+                    <img src="a.jpg" alt="" class="profile-custom img-responsive">
+                    <input type="file" name="imgup" class="">
+                    <!-- <img src="{{this.url store=" profilepic "}}" class="img profile-custom" alt="change pic"> -->
+                </a>
+                <!--   {{/if}} -->
+            </div>
+            <div class="col-sm-9">
+                <h1 class="title text-left pad-left light">{{proname}}</h1>
+                <br>
+                <h2 class="Description text-left pad-left light">Description : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta porro alias, eveniet atque harum pariatur.</h2>
+                <br>
+                <span class="row">
+                    <h3 class="text-left pad-left" style="display:inline;">{{probranch}}</h3>
+                    <span style="padding-left:140px;">
+                        <label >Date of Birth : </label>
+                        <input id="meeting" type="date" value="{{prodob}}" class="DOB"  style="color:#333;" />                        
+               
+                    </span>
+                </span>
+            </div>
+        </div>
+        <hr>
+        <div class="row light" >
+            <div class="col-sm-6 text-center center-block bg-colorp1" style="border-radius:  50px 0 0 0;">
+                <button type="submit" class="blank2 view1">
+                    <i class="fa fa-shield picons"></i>
+                    <h2 class="case-study__title light">Projects</h2>
+                </button>
+            </div>
+            <div class="col-sm-6  text-center center-block bg-colorp2" style="border-radius:0  50px  0 0;">
+                <button type="submit" class="blank2 view2">
+                    <i class="fa fa-file-text picons"></i>
+                    <h2 class="case-study__title light">Marksheets</h2>
+                </button>
+            </div>
+        </div>
+        <div class="row light v5">
+            <div class="col-sm-6  text-center center-block bg-colorp3" style="border-radius:  0 0 0 50px;">
+                <button type="submit" class="blank2 view3">
+                    <i class="fa fa-certificate picons"></i>
+                    <h2 class="case-study__title light">Certificates</h2> 
+                </button>
+            </div>
+            <div class="col-sm-6  text-center center-block bg-colorp4" style="border-radius:0 0 50px     0;" >
+                <button type="submit" class="blank2 view4">
+                    <i class="fa fa-trophy picons"></i>
+                    <h2 class="case-study__title light">Achievements</h2>
+                </button>
+            </div>
+        </div>
+    </div><br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</template>

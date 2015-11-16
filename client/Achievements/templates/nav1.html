@@ -1,0 +1,52 @@
+<template name="nav1">
+    <!-- Button trigger modal -->
+    <div class="container white">
+        <div class="row">
+            <h1 class="col-sm-12  text-center center-block light">
+        Achievements</h1>
+        </div>
+        <hr>
+        <br>
+        <div class="row">
+            <div class="col-sm-12 text-center center-block">
+                <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal">
+                    Add an Achievements </button>
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">Add an Achievements</h4>
+                            </div>
+                            <div class="modal-body ">
+                                <div class="col-sm-2"></div>
+                                <div class="col-sm-6">
+                                    <div class="row text-right">
+                                        <label for="url">URL : </label>
+                                        <input class="url input-xlarge" type="text" name="url" value="" id="url">
+                                        <br>
+                                        <label for="name">NAME :</label>
+                                        <input class="name" type="text" name="name" id="name mname">
+                                        <br>
+                                        <label for="description">DESCRIPTION :</label>
+                                        <textarea class="description input-xlarge" name="description" rows="6"></textarea>
+                                        <br>
+                                    </div>
+                                </div>
+                                <div class="col-sm-2"></div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger cancel btn-lg" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-success save  btn-lg">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+        </div>
+        <br>
+    </div>
+    <br>
+</template>

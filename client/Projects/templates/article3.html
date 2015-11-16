@@ -1,0 +1,28 @@
+<template name="article3">
+<style>
+    a{
+        color: #fff;
+    }
+    a:focus,a:hover,a:active{
+        color: #fff;
+        text-decoration: none;
+    }
+</style>
+    <h5>{{proname}}</h5>
+    <a href={{src}}>
+        <i class="fa fa-github picons"></i>
+        <h4 class="muted">{{name}}</h4>
+    </a>
+    <p>{{description}}</p>
+
+    <input type="button" name="" value="Delete" class="btn btn-danger btn-lg adel">  {{#if currentUser}}
+    <p>
+        <a href="#" class="like mlike">
+            <!--  <img width="20px" src="likebtn.jpg" class="img-circle" alt="#" /> -->
+            <span class="glyphicon glyphicon-thumbs-up pad" aria-hidden="true"></span>
+        </a>
+        <span class="label label-info">{{numlikes}}</span> &nbsp;
+        <span class="badge badge-success">{{likethis}}</span>
+    </p>
+    {{/if}}
+</template>
