@@ -26,8 +26,7 @@ Meteor.methods({
 		Posts.remove({});
 	},
 	'addNames':function(){
-		Meteor.users.update('tgHnK8gQ46GXRAGtv', {$set: {'profile.fullname': 'Mike Tyson' }});
-		Meteor.users.update('Xr9viZQzp6KbvX6b7', {$set: {'profile.fullname': 'Evander Holyfield' }});
+		
 	},
 		'createAdmin':function(option){
 		Roles.addUsersToRoles(Meteor.userId(),option.roles);
